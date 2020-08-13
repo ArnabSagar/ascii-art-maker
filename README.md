@@ -1,4 +1,4 @@
-# ASCII ART MAKER
+# ASCII ART MAKER (work in progress)
 
 
 The following program takes a photo as an input<br/>
