@@ -1,24 +1,26 @@
 import PIL.Image
 
 #the ascii characters used to represent the pixels of varying intensity/brightness
-ASCII_CHARS: ["@","#","S","%","?", "*", "+", ";", ":", ",","."]
+ASCII_CHARS: ["@","H","$","%","?", "\"", "+", ";", ":", ",","."]
 
 
-#converts
+#function to resize the given image
+def resize(image, newWidth=200):
+    width = image.width
+    height = image.height
+    aspectRatio = height/width   
+    newHeight = (newWidth * aspectRatio) #because we want to maintain the aspect ratio
+    resizedImage = image.resize(newWidth, newHeight)
+    return resizedImage
 
 
-
-
-
-#convert each pizel to greyscale:
+#function to convert image into greyscale
 def greyscale(image):
-    grayscale_image = image.convert("L")
-    return grayscale_image
+    greyscaleImage = image.covert('L')
+    return greyscaleImage
 
 
-
-
-#convert each pixel to an ASCII character
+#convert each greyscale pixel to an ASCII character
 def convert_to_ascii():
     pixels = image.getdata()
     
