@@ -15,3 +15,6 @@ To run the program, use:
 $ python3 app.py 
 ```
 on the command line in the root folder
+
+
+This will generate an img.txt file with the final art.

@@ -57,7 +57,9 @@ def main(newWidth = 100):
     totalLengthData = len(newImageData)
     finalImage = "\n".join(newImageData[i:(i+newWidth)] for i in range(0, totalLengthData, newWidth));
 
-    print(finalImage)
-
+    with open("img.txt", "w") as f:
+        f.write(finalImage)
+        
+    f.close
 
 main()
