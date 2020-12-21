@@ -9,4 +9,3 @@ The art maker works through the following steps:  <br/>
 2. The resized image is converted into greyscale.  <br/>
 3. Finally, each greyscale pixel is coneveted to an ASCII character. <br/>
 
-
